@@ -1,0 +1,29 @@
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: chocolate;
+}
+
+h3 {
+    color: cornflowerblue;
+}
+
+article {
+    text-align: justify;
+}
+
+div {
+    list-style-position: inside;
+}
+
+span {
+    text-align: center;
+    display: block;
+}
