@@ -1,0 +1,65 @@
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: chocolate;
+}
+
+h3 {
+    color: cornflowerblue;
+}
+
+article {
+    text-align: justify;
+}
+
+div * {
+    list-style-position: inside;
+}
+
+span {
+    text-align: center;
+    display: block;
+}
+
+* {
+    margin: 10px;
+}
+
+[name] {
+    color: deeppink;
+}
+
+/*  
+div[title~="isim"] ==> ~= ifadesi ile title özelliği "isim" içeren divlere erişir
+a[href ^= "https"] ==> ^= ifadesi ile href özelliği "https" ile başlayan a etiketlerine erişir
+a[href *= "http"] ==> *= ifadesi ile href özelliği "http" içeren a etiketlerine erişir
+div[class$="test"] ==> $= ifadesi ile class özelliği sonunda "test" içeren divlere erişir
+a[href*="https"][href$="com"] ==> https ile başlayan ve sonunda com olan a etiketlerine erişir
+(Child Selectors)
+p > span ==> Parent etiketi yani bir üst kapsayıcısı p olan span etiketine ulaşır
+p > span >b
+div > ul >li#first
+(Descentad Selectors)
+div p ==> Burada div içinde olan tüm p etiketlerine ulaşır
+(General Sibling Selectors)
+ul ~ p ==> <p> etiketi <ul> etiketinden sonra gelmeli (arada başka etiketler olabilir) ve ikiside aynı düzeyde yani aynı parent etiketine sahip olmalı
+(Adjacent Sibling Selector)
+ul + p ==> Genel kardeş seçiciden tek farkı belirtilen etiketler bitişik arka arkaya gelmeliler. + işareti ile gösterilir
+Sahte Sınıf Seçiciler (Pseudo classes)
+a#google:link ==> Daha önce tarayıcıda açılmamış linke CSS uygular
+a.test:hover ==> Seçici ile işaretlenen etiketin üzerine mouse ile gelindiğinde CSS uygalanır ve mouse üzerinde değilken etki kaybolur.
+a:active ==> Mouse ile tıklandığında CSS uygulanır. Tıklama kaldırıldığında etki kaybolur
+ul > li:first-child ==> İlk child etikete CSS uygulanır
+ul > li:last-child ==> Son child etikete CSS uygulanır
+p::first-letter ==> Blok seviyesinde bir etiketteki ilk harfe CSS uygular. <span> blok seviyesinde bir etiket olmadığından bu pseudo class uygulanamaz
+p::first-line ==> Blok seviyesinde bir etiketin ilk satırına CSS uygular
+p::before ==> Belirtilen etiketin önüne CSS uygular
+p::after ==> Belirtilen etiketin sonuna CSS uygular
+*/
